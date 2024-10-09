@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="contact.css">
+	<title>Contact us Page</title>
+</head>
+
+<body>
+	<!-- banner section -->
+	<section class="banner">
+		<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+			alt="Welcome to our Contact Us page">
+		<h1>Get in Touch With Us</h1>
+		<p>We're here to answer any questions you may have.</p>
+	</section>
+
+	<!-- Contact form -->
+	<section class="contact-form">
+		<div class="form-container">
+			<h2>Your Details</h2>
+			<form action="http://127.0.0.1:5500/starbucks/contact.html" method="POST">
+
+				<label for="name">Name: </label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email: </label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="phone">Phone: </label>
+				<input type="tel" id="phone" name="phone">
+
+				<label for="message">Message: </label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+                <button id="homeButton" type="submit" class="submit-button">Submit</button>
+
+			</form>
+		</div>
+	</section>
+    <script>
+        // Get a reference to the button element
+        const homeButton = document.getElementById('homeButton');
+    
+        // Add a click event listener to the button
+        homeButton.addEventListener('click', function() {
+            // Set the new URL to the home page
+            alert("Your request is submitted successfully");
+            window.location.href = 'index.html';
+        });
+    </script>
+    
+	<section class="contact-info">
+		<h2>Contact Information</h2>
+		<address>
+			StarBucks<br>
+			Jalandhar, Punjab<br>
+			India, 144111<br>
+			Phone: 8106322771<br>
+			Email: <a href="sravanideepu4002@gmail.com">sravanideepu4002@gmail.com</a>
+		</address>
+	</section>
+	<footer>
+        <p>&#169; CarpoolVenom All Right Reserved.</p>  
+	</footer>
+	
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em; 
+    color: #1e3932;   
+}
+h3 {
+    color: #008148;
+}
+.content {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #0066cc;
+}
